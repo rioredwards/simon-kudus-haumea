@@ -1,96 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="css/index.css" />
     <title>My Portfolio</title>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <h1 id="head-name">Simon Kudus</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#connect">Connect</a></li>
-        </ul>
-      </nav>
+        <h1 id="head-name">Simon Kudus</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#connect">Connect</a></li>
+            </ul>
+        </nav>
     </header>
     <div id="img-frame">
-      <img
-        src="img/profile.png"
-        alt="Simon"
-        aria-label="Simon's profile picture"
-      />
+        <img src="img/profile.png" alt="Simon" aria-label="Simon's profile picture" />
     </div>
     <section id="about">
-      <h2>About</h2>
-      <p>Hello, my name is Simon. I am from the Bay Area, CA.</p>
-      <p>I hope to become a full-time developer in the near future.</p>
+        <h2>About</h2>
+        <p>Hello, my name is Simon. I am from the Bay Area, CA.</p>
+        <p>I hope to become a full-time developer in the near future.</p>
     </section>
 
     <section id="experience">
-      <h2>Work Experience</h2>
-      <div class="experience-item">
-        <div class="job-title">Code The Dream</div>
-        <div class="job-dates">Jan 2024 - Present</div>
-        <div class="job-description">
-          Worked on various web development projects using modern technologies.
+        <h2>Work Experience</h2>
+        <div class="experience-item">
+            <div class="job-title">Code The Dream</div>
+            <div class="job-dates">Jan 2024 - Present</div>
+            <div class="job-description">
+                Worked on various web development projects using modern technologies.
+            </div>
         </div>
-      </div>
-      <div class="experience-item">
-        <div class="job-title">GitHub</div>
-        <div class="job-dates">Jan 2024 - Present</div>
-        <div class="job-description">
-          Projects and collaborations with other developers.
+        <div class="experience-item">
+            <div class="job-title">GitHub</div>
+            <div class="job-dates">Jan 2024 - Present</div>
+            <div class="job-description">
+                Projects and collaborations with other developers.
+            </div>
         </div>
-      </div>
     </section>
 
     <section id="skills">
-      <h2>Skills</h2>
-      <ul></ul>
+        <h2>Skills</h2>
+        <ul></ul>
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
+        <h2>Projects</h2>
     </section>
 
     <section id="connect">
-      <h2>Connect with Me</h2>
-      <ul>
-        <li class="connect-link">
-          <a href="https://slack.com/Simon" class="social-icon">
-            <i class="fas fa-comments" aria-hidden="true"></i> @Simon on Slack
-          </a>
-        </li>
-        <li class="connect-link">
-          <a href="https://discord.com/simon" class="social-icon">
-            <i class="fas fa-headset" aria-hidden="true"></i> @simon on Discord
-          </a>
-        </li>
-        <li class="connect-link">
-          <a
-            href="https://github.com/simon01092023/simon-kudus-haumea"
-            class="social-icon"
-          >
-            <i class="fab fa-github" aria-hidden="true"></i> @simon01092023 on
-            GitHub
-          </a>
-        </li>
-      </ul>
+        <h2>Connect with Me</h2>
+        <ul>
+            <li class="connect-link">
+                <a href="https://slack.com/Simon" class="social-icon">
+                    <i class="fas fa-comments" aria-hidden="true"></i> @Simon on Slack
+                </a>
+            </li>
+            <li class="connect-link">
+                <a href="https://discord.com/simon" class="social-icon">
+                    <i class="fas fa-headset" aria-hidden="true"></i> @simon on Discord
+                </a>
+            </li>
+            <li class="connect-link">
+                <a href="https://github.com/simon01092023/simon-kudus-haumea" class="social-icon">
+                    <i class="fab fa-github" aria-hidden="true"></i> @simon01092023 on GitHub
+                </a>
+            </li>
+        </ul>
     </section>
+
+    <!-- Leave a Message Section -->
+    <section>
+        <h2>Leave a Message</h2>
+        <form name="leave_message">
+            <label for="usersName">Name:</label><br>
+            <input type="text" name="usersName" id="usersName" required><br>
+            <label for="usersEmail">Email:</label><br>
+            <input type="email" name="usersEmail" id="usersEmail" required><br>
+            <label for="usersMessage">Message:</label><br>
+            <textarea name="usersMessage" id="usersMessage" required></textarea>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Messages Section -->
+    <section id="messages">
+        <h2>Messages</h2>
+        <ul></ul>
+    </section>
+    <br>
+    <br>
+
+    <!-- Footer Section -->
+    <footer></footer>
+
     <script src="js/index.js"></script>
-  </body>
+</body>
 </html>
+
+
