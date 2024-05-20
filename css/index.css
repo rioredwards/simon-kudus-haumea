@@ -48,7 +48,6 @@ h1 {
     text-align: center;
     padding: 20px 0;
     letter-spacing: 2px;
-    border-style: dotted;
 }
 
 section {
@@ -56,8 +55,12 @@ section {
     margin-top: 20px;
 }
 
-#About {
-    border-style: ridge;
+#img-frame {
+    border-bottom: dotted;
+}
+
+#about {
+    text-decoration: none;
 }
 
 h2 {
@@ -67,7 +70,7 @@ h2 {
 }
 
 /* Grid layout for Experience section */
-#Experience {
+#experience {
     background-color: #f5f5f5;
     border: 1px solid #ddd;
     padding: 20px;
@@ -105,7 +108,7 @@ h2 {
     color: #777;
 }
 
-#Connect {
+#connect {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -160,7 +163,7 @@ h2 {
         /* 2nd change */
     }
 
-    #Connect {
+    #connect {
         flex-direction: column;
         /* 1st change */
         align-items: center;
@@ -191,7 +194,7 @@ h2 {
         /* 2nd change */
     }
 
-    #Connect {
+    #connect {
         flex-direction: row;
         /* 1st change */
         gap: 30px;
