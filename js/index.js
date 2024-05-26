@@ -44,7 +44,6 @@ function createFooter() {
         fontFamily: "Roboto, sans-serif",
         fontStyle: "italic",
         padding: "10px 0",
-        position: "fixed",
         bottom: "0",
         width: "100%"
     });
